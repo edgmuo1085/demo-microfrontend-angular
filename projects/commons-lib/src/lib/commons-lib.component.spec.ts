@@ -8,10 +8,9 @@ describe('CommonsLibComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CommonsLibComponent]
-    })
-    .compileComponents();
-    
+      imports: [CommonsLibComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CommonsLibComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
