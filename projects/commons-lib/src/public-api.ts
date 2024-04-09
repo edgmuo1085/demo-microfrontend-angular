@@ -4,3 +4,4 @@
 
 export * from './lib/commons-lib.service';
 export * from './lib/commons-lib.component';
+export * from './lib/models/product.interface';
