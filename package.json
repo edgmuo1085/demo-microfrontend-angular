@@ -8,6 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
+    "mf-shell": "ng s mf-shell",
+    "mf-shopping": "ng s mf-shopping",
+    "mf-payment": "ng s mf-payment",
+    "all": "npm-run-all --parallel mf-shell mf-shopping mf-payment",
     "format:write": "prettier --write \"**/projects/**/*.{ts,js,json,html,css,scss,md}\"",
     "format:check": "prettier --check \"**/projects/**/*.{ts,js,json,html,css,scss,md}\""
   },
