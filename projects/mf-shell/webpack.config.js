@@ -2,10 +2,9 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
   remotes: {
-    mfShopping: 'http://localhost:4201/remoteEntry.js',
-    mfPayment: 'http://localhost:4202/remoteEntry.js',
+    mfShopping: 'http://angular-two.local/remoteEntry.js', //shopping
+    mfPayment: 'http://angular-three.local/remoteEntry.js', //payment
   },
-
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },
