@@ -12,6 +12,10 @@
     "mf-shopping": "ng s mf-shopping",
     "mf-payment": "ng s mf-payment",
     "all": "npm-run-all --parallel mf-shell mf-shopping mf-payment",
+    "build:shell": "ng build mf-shell",
+    "build:shopping": "ng build mf-shopping",
+    "build:payment": "ng build mf-payment",
+    "build:all": "npm run build:shell && npm run build:shopping && npm run build:payment",
     "format:write": "prettier --write \"**/projects/**/*.{ts,js,json,html,css,scss,md}\"",
     "format:check": "prettier --check \"**/projects/**/*.{ts,js,json,html,css,scss,md}\""
   },
