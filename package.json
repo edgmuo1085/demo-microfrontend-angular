@@ -17,7 +17,13 @@
     "build:payment": "ng build mf-payment",
     "build:all": "npm run build:shell && npm run build:shopping && npm run build:payment",
     "format:write": "prettier --write \"**/projects/**/*.{ts,js,json,html,css,scss,md}\"",
-    "format:check": "prettier --check \"**/projects/**/*.{ts,js,json,html,css,scss,md}\""
+    "format:check": "prettier --check \"**/projects/**/*.{ts,js,json,html,css,scss,md}\"",
+    "copy:home": "sudo cp dist/mf-shell/* /var/www/home.angular/ -R",
+    "copy:shop": "sudo cp dist/mf-shopping/* /var/www/shopping.angular/ -R",
+    "copy:pay": "sudo cp dist/mf-payment/* /var/www/payment.angular/ -R",
+    "rem:home": "sudo rm -r /var/www/home.angular/*",
+    "rem:shop": "sudo rm -r /var/www/shopping.angular/*",
+    "rem:pay": "sudo rm -r /var/www/payment.angular/*"
   },
   "private": true,
   "dependencies": {
